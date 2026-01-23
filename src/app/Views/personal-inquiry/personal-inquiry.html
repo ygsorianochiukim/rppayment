@@ -1,0 +1,56 @@
+<div class="flex-row page bg-white items-center justify-center">
+    <div class="!bg-red-500 h-full w-1/2 overflow-hidden">
+        <div class="absolute bg-black/50 p-4 top-0 z-10 w-1/2 h-full flex-col items-center justify-center">
+            <span class="block text-center !text-5xl font-playfair text-white !w-1/2">
+                “Being informed is a quiet strength, thank you for staying mindful of your account.”
+            </span>
+        </div>
+        <img src="/hero.jpg" alt="" class="relative h-full w-full object-cover scale-105">
+    </div>
+
+    <div class="bg-prmary h-full w-1/2 flex-col justify-center items-center gap-10">
+        <img src="/logo.png" alt="" class="w-1/2">
+        <div class="w-[60%] bg-secondary rounded-xl p-3 flex-col gap-6">
+            <header class="font-[700] text-3xl text-white text-center">Customer Verification</header>
+            <div class="flex-col gap-4">
+                <div>
+                    <div class="w-full px-3 py-4 bg-white rounded-xl">
+                        <div class="flex-row items-center justify-left gap-3">
+                            <lucide-icon [img]="fieldIcon"></lucide-icon>
+                            <div class="w-full">
+                                <input type="text" name="" id="" class="w-full outline-none placeholder:text-gray-500" placeholder="First Name">
+                            </div>
+                        </div>
+                    </div>
+                    ex. Juan
+                </div>
+                <div>
+                    <div class="w-full px-3 py-4 bg-white rounded-xl">
+                        <div class="flex-row items-center justify-left gap-3">
+                            <lucide-icon [img]="fieldIcon"></lucide-icon>
+                            <div class="w-full">
+                                <input type="text" name="" id="" class="w-full outline-none placeholder:text-gray-500" placeholder="Middle Initial (Optional)">
+                            </div>
+                        </div>
+                    </div>
+                    ex. D
+                </div>
+                <div>
+                    <div class="w-full px-3 py-4 bg-white rounded-xl">
+                        <div class="flex-row items-center justify-left gap-3">
+                            <lucide-icon [img]="fieldIcon"></lucide-icon>
+                            <div class="w-full">
+                                <input type="text" name="" id="" class="w-full outline-none placeholder:text-gray-500" placeholder="Last Name">
+                            </div>
+                        </div>
+                    </div>
+                    ex. Dela Cruz
+                </div>
+                <button class="btn-accent" (click)="validation()">
+                    Verify Customer Information
+                </button>
+            </div>
+            
+        </div>
+    </div>
+</div>

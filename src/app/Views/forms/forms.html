@@ -1,0 +1,24 @@
+<div class="page flex-row items-center justify-center">
+    <div class="w-full h-full bg-black/50 bg-[url(/hero.jpg)] bg-blend-multiply bg-center">
+
+    </div>
+    <div class="w-full h-full flex-col items-center justify-center gap-8">
+        <img src="/logo.png" alt="" class="w-1/2">
+        <div class="w-2/3 p-5 bg-secondary rounded-xl p-3">
+            @if (step === 0) {
+                <app-personal-inquiry (nextStep)="setStep($event)"></app-personal-inquiry>
+            }
+
+            @if (step === 1) {
+                <app-account-validation (nextStep)="setStep($event)"></app-account-validation>
+            }
+            @if (step === 2) {
+                <app-selection (nextStep)="setStep($event)"></app-selection>
+            }
+            @if (step === 3) {
+                <app-lsp></app-lsp>
+            }
+        </div>
+    </div>
+
+</div>

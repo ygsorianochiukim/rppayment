@@ -15,7 +15,7 @@ export class Selection {
   constructor() {}
 
   LSPayments(){
-    localStorage.setItem('step' , '3');
+    sessionStorage.setItem('step' , '3');
     this.nextStep.emit(3);
   }
 }

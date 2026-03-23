@@ -6,7 +6,7 @@
                 <div class="flex-row items-center justify-left gap-3">
                     <lucide-icon [img]="fieldIcon"></lucide-icon>
                     <div class="w-full">
-                        <input type="text" name="" id="" class="w-full outline-none placeholder:text-gray-500" placeholder="First Name">
+                        <input type="text" name="firstname" [(ngModel)]="NameField.firstname" id="" class="w-full outline-none placeholder:text-gray-500" placeholder="First Name">
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
                 <div class="flex-row items-center justify-left gap-3">
                     <lucide-icon [img]="fieldIcon"></lucide-icon>
                     <div class="w-full">
-                        <input type="text" name="" id="" class="w-full outline-none placeholder:text-gray-500" placeholder="Middle Initial (Optional)">
+                        <input type="text" name="middlename" [(ngModel)]="NameField.middlename" id="" class="w-full outline-none placeholder:text-gray-500" placeholder="Middle Initial (Optional)">
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                 <div class="flex-row items-center justify-left gap-3">
                     <lucide-icon [img]="fieldIcon"></lucide-icon>
                     <div class="w-full">
-                        <input type="text" name="" id="" class="w-full outline-none placeholder:text-gray-500" placeholder="Last Name">
+                        <input type="text" name="lastname" [(ngModel)]="NameField.lastname" id="" class="w-full outline-none placeholder:text-gray-500" placeholder="Last Name">
                     </div>
                 </div>
             </div>

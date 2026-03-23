@@ -12,9 +12,9 @@ import { Lsp } from "../lsp/lsp";
 })
 export class Forms implements OnInit {
 
-  phaseLocator = localStorage.getItem('form_phase');
+  phaseLocator = sessionStorage.getItem('form_phase');
   currentphase: string = '';
-  step: number = Number(localStorage.getItem('step')) || 0;
+  step: number = Number(sessionStorage.getItem('step')) || 0;
 
   
   constructor() {}
@@ -24,6 +24,6 @@ export class Forms implements OnInit {
 
   setStep(step: number){
     this.step = step;
-    localStorage.setItem('step', step.toString());
+    sessionStorage.setItem('step', step.toString());
   }
 }
